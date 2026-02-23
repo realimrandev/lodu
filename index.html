@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ludo Board (HTML + CSS)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <div class="board" role="img" aria-label="Ludo board layout">
+      <!-- Top row -->
+      <div class="home home-red">
+        <div class="home-inner">
+          <div class="tokens">
+            <div class="token token-red"></div>
+            <div class="token token-red"></div>
+            <div class="token token-red"></div>
+            <div class="token token-red"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="track track-vertical">
+        <!-- 3 x 6 cells -->
+        <div class="cell"><span class="icon arrow down green"></span></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell fill-green"></div>
+        <div class="cell fill-green"></div>
+
+        <div class="cell"><span class="icon star red"></span></div>
+        <div class="cell fill-green"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell fill-green"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell fill-green"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="home home-green">
+        <div class="home-inner">
+          <div class="tokens">
+            <div class="token token-green"></div>
+            <div class="token token-green"></div>
+            <div class="token token-green"></div>
+            <div class="token token-green"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle row -->
+      <div class="track track-horizontal">
+        <!-- 6 x 3 cells -->
+        <div class="cell"></div>
+        <div class="cell fill-red"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"><span class="icon arrow right red"></span></div>
+        <div class="cell fill-red"></div>
+        <div class="cell fill-red"></div>
+        <div class="cell fill-red"></div>
+        <div class="cell fill-red"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"><span class="icon star blue"></span></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="center">
+        <div class="tri tri-red"></div>
+        <div class="tri tri-green"></div>
+        <div class="tri tri-yellow"></div>
+        <div class="tri tri-blue"></div>
+        <div class="crown" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="44" height="44">
+            <path d="M10 44h44v6H10z" fill="#111" />
+            <path d="M12 44l6-24 14 14 14-14 6 24H12z" fill="#111" />
+            <circle cx="18" cy="18" r="4" fill="#111" />
+            <circle cx="46" cy="18" r="4" fill="#111" />
+            <circle cx="32" cy="26" r="4" fill="#111" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="track track-horizontal">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"><span class="icon star green"></span></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell fill-yellow"></div>
+        <div class="cell fill-yellow"></div>
+        <div class="cell fill-yellow"></div>
+        <div class="cell fill-yellow"></div>
+        <div class="cell fill-yellow"></div>
+        <div class="cell"><span class="icon arrow left yellow"></span></div>
+
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell fill-yellow"></div>
+        <div class="cell fill-yellow"></div>
+      </div>
+
+      <!-- Bottom row -->
+      <div class="home home-blue">
+        <div class="home-inner">
+          <div class="tokens">
+            <div class="token token-blue"></div>
+            <div class="token token-blue"></div>
+            <div class="token token-blue"></div>
+            <div class="token token-blue"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="track track-vertical">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell fill-blue"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell fill-blue"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell fill-blue"></div>
+        <div class="cell"><span class="icon star yellow"></span></div>
+
+        <div class="cell fill-blue"></div>
+        <div class="cell fill-blue"></div>
+        <div class="cell"></div>
+
+        <div class="cell"></div>
+        <div class="cell"><span class="icon arrow up blue"></span></div>
+        <div class="cell"></div>
+      </div>
+
+      <div class="home home-yellow">
+        <div class="home-inner">
+          <div class="tokens">
+            <div class="token token-yellow"></div>
+            <div class="token token-yellow"></div>
+            <div class="token token-yellow"></div>
+            <div class="token token-yellow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="hint"><b>ludo-board</b> </p>
+  </main>
+</body>
+</html>
